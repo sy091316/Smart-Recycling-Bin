@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Waste Management</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+  <link rel="icon" type="image/png" href="/img/logo.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navbar Starter Code -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#" id="home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#howitworks">How It Works</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+      <!--- Add to Nav Bar --->
+      <button id="theme-button">Toggle Dark Mode</button>
+      <button id="reduce-motion">Reduce Motion</button>
+      <!-- Stretch Challenge: Drop Down -->
+      <!-- <div class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div> -->
+    </ul>
+    
+  </div>
+
+  <!--- Headings --->
+  <div class="header">
+    <div class="header-container">
+      <div class="header-item">
+        <img src="./img/recycling bin.png" id="header-img" />
+      </div>
+      <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
+      <div class="header-item">
+        <h1 class="title">Smart Recycling Bin</h1>
+        <h3 class="title_description">New Solution to Help Everyone Recycle Better And Protect Our Environment</h3>
+        <div class="header-button">
+          <button class="howWorks" type="button"><a href="#howitworks" class="button1">How It Works</a></button>
+          <button class="contact" type="button"><a href="#contactus" class="button2">Contact Us</a></button>
+        </div>
+      </div>
+    </div>
+    <a href="#about"><img src="./img/downarrow.png" class="downarrow"></a>
+  </div>
+
+  <div class="main">
+    <!--- About --->
+    <div id="about">
+      <h2 class="subtitle">What is Smart Recycling Bin?</h2>
+      <p id="paragraph"> There are around 4 billion tons of waste are produced in the world every year and poor waste
+        management leads to
+        the contamination of water and increases greenhouse gases in the atmosphere. <br>
+        Smart Recycling Bin is a new app that are helpful in improving waste management and encourage
+        individuals to learn the correct waste sorting.
+      </p>
+
+      <!--- Data --->
+      <div class="data revealable">
+        <h2 class="why_title">Smart Recycling Bin Features:</h2>
+        <div class="flex-images">
+          <img src="./img/scan.png" class="scan_img" id="scan" />
+          <img src="./img/detect.png" class="detect_img" id="detect" />
+          <img src="./img/recycle.png" class="recycle3_img" id="recycle" />
+        </div>
+        <img src="./img/graph.png" class="graph_img" id="graph" />
+        <!-- <h4>Smart Recycling Bin Features:</h4> -->
+        <!--Add some charts + captions that illustrate my topic and why it is a problem-->
+        <ul>
+          <li>Use image-based sensors to identify the correct bins to <b>increase accuracy of waste-sorting</b></li>
+          <li>Prompting accurate waste sorting behavior encourage users <b>learn what items can/cannot be recycled</b>
+          </li>
+          <li><b>Less waste goes into landfills and reduce green house gas emissions</b></li>
+          <li>Prompting accurate waste sorting behavior <b>improves air and water quality</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="impact">
+      <!--- Impact --->
+      <h2 class="subtitle">Impact of Poor Waste Management:</h2>
+      <div class="three_impact revealable">
+        <div class="impact_description">
+          <img src="/img/waste.png" class="impact_img1"/>
+          <h3 class="subsubtitle1">Around 4 Billion
+            tons of waste are produced every year</h3>
+          <p class="impact_1">Inadequate waste management systems can result in a higher volume of waste being disposed of improperly, exacerbating the issue.</p>
+        </div>
+
+        <div class="impact_description">
+          <img src="/img/bin.png" class="impact_img2"/>
+          <h3 class="subsubtitle">1 in 4 items are thrown in a recycling bin isn't recyclable</h3>
+          <p class="impact_2">Many people may not be fully informed about what can and cannot be recycled. Confusing recycling instructions on bins and limited sorting knowledge increase risk of improper waste disposal
+          </p>
+        </div>
+
+        <div class="impact_description">
+          <img src="/img/earth.png" class="impact_img3"/>
+          <h3 class="subsubtitle">Poor waste management pollutes water and soil</h3>
+          <p class="impact_3">Improper disposal of waste, such as dumping untreated sewage or industrial waste into water bodies, can
+            contaminate surface water and groundwater.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="howitworks">
+      <h2 class="how_works_title">How It Works:</h2>
+      <img src="./img/prototype.gif" class="prototype"/>
+      <!-- <iframe width="800" height="500" src="https://www.youtube.com/embed/9UePbij2oxQ?si=UP4RlNFqz6IYkw30"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe> -->
+    </div>
+
+    <div class="contactUs" id="contactUs">
+      <br>
+      <h2 class="contactus" id="contactus">
+        Contact Us 📢
+      </h2>
+      <div class="info_and_form">
+        <div class="petition-container">
+          <div class="petition-para">
+            <!-- info goes here -->
+            Questions? Comments? Feel free to share your feedback or ask questions about the product! <br><br>
+            Your feedback is highly appreciated and will help me improve the design of Smart Recycling Bin.
+            <br><br>
+          </div>
+
+          <!--- Sign Petition Form --->
+          <form id="sign-petition" title="sign-petition">
+            <!-- inputs go here -->
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Email">
+            <label for="thoughts">Share Your Thoughts/Questions: </label>
+            <textarea id="thoughts" placeholder="Thoughts/Questions"></textarea>
+            <!--- Sign Now Button --->
+            <button type="button" id="sign-now-button">Submit</button>
+          </form>
+        </div>
+
+        <!-- show your comments/what you submitted -->
+        <div class="signatures">
+          <p class="sig_comments">😄 DJ's comments: I love this product!</p>
+          <p class="sig_comments">😄 Amy's comments: I love the color scheme and design of the product!</p>
+          <!-- <p>I would love to hear your:</p>
+          <p>🖊️ Thoughts about the product</p>
+          <p>🖊️ Feedback on the prototype design </p>
+          <p>🖊️ Questions/Concerns about product</p> -->
+          <p id="counter">🖊️ 2 people have submitted the form</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="news">
+      <!--- News --->
+      <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+      <h2 class="subtitle">Recent News</h2>
+      <a class="news_link"
+        href="https://www.cbc.ca/radio/checkup/blame-the-signs-when-recycling-is-confusing-we-avoid-it-1.5105683"
+        target=”_blank”>
+        <article>
+          <h3 class="news_title">Blame the signs: When recycling is confusing, we avoid it</h3>
+          <p class="summary">Psychology professor says improving signage and locations increases amount recycled</p>
+        </article>
+      </a>
+      <a class="news_link" href="https://www.roadrunnerwm.com/blog/signage-best-practices" target=”_blank”>
+        <article>
+          <h3 class="news_title">Waste & Recycling Signage Best Practices</h3>
+          <p class="summary">Learn why signage is so important for businesses large and small, and the best practices
+            for incorporating waste & recycling signage at your business.</p>
+        </article>
+      </a>
+      <br><br><br><br><br>
+    </div>
+
+    <div class="footer">
+      <img src="/img/logo.png" class="logo">
+      <a href="https://www.figma.com/proto/K42krIVUF0l4nhMYZnuTME/UI?type=design&node-id=106-285&t=5MKVLLCwjNPnUVPW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=106%3A285&mode=design"
+        class="prototype_link" target=”_blank”>Prototype Link</a>
+    </div>
+  </div>
+
+  
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- image here-->
+      <img src="/img/modal_icon.png" id="thanks-modal-img">
+      <div id="modal-text-container">
+        <!-- title -->
+        <p id="thanks-modal-content" class="modal_title"></p>
+        <!-- subtext -->
+        <p id="thanks-modal-content" class="modal_subtext">
+          We appreciate the time you took to help us improve Smart Recycling Bin. If you have additional questions or comments, feel free to submit this form again.</p>
+        
+        <!-- button here (stretch feature) -->
+        <button id="close_button">Close</button>
+      </div>
+      <!-- image here-->
+      <!-- <img src="/img/logo.png" id="thanks-modal-img"> -->
+    </div>
+
+  </div>
+
+
+  
+  
+  <!--- Add above the closing body tag </body> --->
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
