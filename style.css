@@ -1,0 +1,780 @@
+@font-face {
+  font-family: 'WixMadeforDisplay';
+  src: url(./font/WixMadeforDisplay.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-padding-top: 90px;
+}
+
+.detect_img {
+  width: 300px;
+  height: 280px;
+  margin-left: 40px;
+}
+
+
+/* Part 1: Navbar */
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  /* position: sticky; fixed; */
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-color: #5D8032;
+  filter: drop-shadow(0 0 0.75rem grey);
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 23px 25px;
+  display: inline-block;
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  font-family: 'WixMadeforDisplay';
+  font-weight: semi-bold;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+  padding-right: 5px;
+  /* margin: 18px 25px; */
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul li a:active {
+  font-weight: bold;
+}
+
+/* Add style to button */
+#theme-button,
+#reduce-motion {
+  background-color: #5D8032;
+  font-family: 'WixMadeforDisplay';
+  font-size: 20px;
+  margin-top: 23px;
+  margin-right: 23px;
+  color: white;
+  text-decoration: underline;
+  /* padding: 5px 30px; */
+  border: 2px solid #5D8032;
+  padding: 5px 20px;
+  display: inline-block;
+  /* margin: 0px;
+  display: inline-block; */
+}
+
+
+/* Part 2: Flexbox */
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: #212427;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  /* Add a background color or image */
+  background-color: white;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: 'WixMadeforDisplay';
+  font-size: 20px;
+  color: #212427;
+
+  .main {
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 55px;
+    padding-bottom: 0;
+
+    margin-top: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.graph_img {
+  width: 1000px;
+  height: 500px;
+  margin-left: 150px;
+}
+
+.error {
+  border-style: bold;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+h1 {
+  color: #235233;
+  font-family: Georgia, serif;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #5D8032;
+}
+
+h2.subtitle {
+  text-align: center;
+}
+
+h2.how_works_title {
+  color: #235233;
+  text-align: center;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+h3.title_description {
+  color: #235233;
+  text-align: left;
+  padding-bottom: 40px;
+
+}
+
+h3.subsubtitle {
+  color: #235233;
+  text-align: left;
+}
+
+h3.subsubtitle1 {
+  color: #235233;
+  text-align: left;
+  margin-top: 40px;
+}
+
+h2.why_title {
+  color: #235233;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+h3.news_title {
+  text-align: left;
+  line-height: 0.5;
+}
+
+/* contact us  */
+.info_and_form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-container {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.petition-para {
+  line-height: normal;
+}
+
+.sig_comments {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* .form_submit {
+  width: 45%;
+  background-color:#EDF8E9; 
+} */
+
+#sign-petition {
+  width: 89%;
+  padding: 30px 30px;
+  /* padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px; */
+  border-radius: 5px;
+
+  background-color: #EDF8E9;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  /* top/rightleft/bottom */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  /* top/rightleft/bottom */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 130px;
+}
+
+#sign-now-button {
+  background-color: #5D8032;
+  border: 2px solid #5D8032;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+.news {
+  text-align: left;
+}
+
+.news a:link {
+  color: #5D8032;
+  text-decoration-color: #235233;
+  text-decoration: none; 
+}
+
+.news a:visited {
+  color: #553280;
+}
+
+.news a:hover {
+  color: #725B3F;
+  font-weight: bold;
+}
+
+.news a:active {
+  font-weight: bold;
+}
+
+.data {
+  background-color: #EDF8E9;
+  border-radius: 30px;
+  padding-bottom: 10px;
+}
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+ol {}
+
+ol li {}
+
+
+ul {
+  color: #235233;
+}
+
+ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.header-button {
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+  margin-right: 0px;
+  border: none;
+  text-align: left;
+}
+
+.button1 {
+  text-decoration: none;
+  color: #5D8032;
+}
+
+.button2 {
+  text-decoration: none;
+  color: white;
+}
+
+.howWorks {
+  background-color: white;
+  border: 2px solid #5D8032;
+  color: #5D8032;
+  margin-right: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+  background-color: #5D8032;
+  border: 2px solid #5D8032;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-images {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* footer only show at the bottom */
+body {
+  position: relative;
+}
+
+.footer {
+  border-top: 1px solid grey;
+  background-color: #EDF8E9;
+  color: white;
+  position: absolute;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Select and style elements by class name or ID */
+/* Example: This styles elements with class="header"*/
+.header {
+  background-color: #EDF8E9;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container {
+  color: #235233;
+  padding-top: 140px;
+  /* padding-top: 130px; */
+  /* padding-top: 130px;
+  padding-bottom: 120px; */
+  /* margin-bottom: 60px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+  /* width: 550px;
+  height: 400px; */
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+  /* margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px; */
+  max-width: 70%;
+}
+
+.header-item:nth-of-type(1) {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.header-item:nth-of-type(2) {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.downarrow {
+  width: 100%;
+  height: 8%;
+  padding-top: 80px;
+  margin-right: 50px;
+  animation: MoveUpDown 1s linear infinite;
+  cursor: pointer;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#howitworks {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: #EDF8E9;
+  border-radius: 30px;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.impact_description:nth-of-type(1) {
+  width: 30%;
+  display: inline-block;
+}
+
+.impact_description:nth-of-type(2) {
+  width: 30%;
+  display: inline-block;
+}
+
+.impact_description:nth-of-type(3) {
+  width: 30%;
+  display: inline-block;
+}
+
+.impact_img1 {
+  /* width: 400px;
+  height: 200px; */
+  width: 100%;
+  height: 38%;
+}
+
+.impact_img2 {
+  /* width: 279px; 
+  height: 250px; */
+  width: 60%;
+  height: 40%;
+}
+
+.impact_img3 {
+  /* width: 200px; 
+  height: 250px; */
+  display: block;
+  padding-right: 70px;
+  align-items: middle;
+  width: 40%;
+  height: 40%;
+}
+
+.impact_1 {}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  font-family: "WixMadeforDisplay";
+  line-height: normal;
+}
+
+.prototype {
+  width: 80%;
+  height: 80%;
+}
+
+.prototype_link {
+  color: #5D8032;
+}
+
+.recycle3_img {
+  width: 200px;
+  height: 290px;
+  margin-left: 40px;
+}
+
+.scan_img {
+  width: 300px;
+  height: 350px;
+  margin-left: 40px;
+}
+
+.three_impact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+
+
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+
+  .data {
+    background-color: black;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    border: 2px solid white;
+  }
+
+  .header {
+    background-color: black;
+  }
+
+  .header-container {
+    color: white;
+    background-color: black;
+  }
+
+  #howitworks {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: black;
+    border-radius: 30px;
+    border: 2px solid white;
+  }
+
+  #sign-petition {
+    background-color: black;
+    border: 2px solid white;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h2.how_works_title {
+    color: white;
+  }
+
+  h3.title_description {
+    color: white;
+  }
+
+
+  ul {
+    color: white;
+  }
+
+}
+
+/* unit 8: create a css rule for revealable class */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  /* update the colors and font sizes as you like */
+  color: #212427;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* title(thank you person name) */
+#thanks-modal-content {
+  width: 30rem;
+  /* sets a default width for the text container */
+  font-weight: medium;
+  font-family: Georgia, serif;
+}
+
+/* modal top image */
+#thanks-modal-img {
+  width: 40%;
+  height: 28vh;
+  position: relative;
+}
+
+.modal_title {
+  color: #5D8032;
+}
+
+/* modal description/subtext */
+.modal_subtext {
+  margin: 0;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'WixMadeforDisplay' !important;
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#close_button {
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #5D8032;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* .hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover{
+  cursor: pointer;
+} */
+
+
+
+
+/* ----------- XS devices  ----------- */
+@media (max-width: 575px) {}
+
+/* ----------- SM devices  ----------- */
+@media (min-width: 576px) {}
+
+
+/* ----------- iPad only devices  ----------- */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/* ----------- Medium devices  ----------- */
+@media (min-width: 768px) {}
+
+/* ----------- Large devices ----------- */
+@media (min-width: 992px) {}
+
+/* ----------- XL devices ----------- */
+
+@media (min-width: 1200px) {}
